@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<!--Config file for mem logger parser -->
+<!--Copyright (c) Qualcomm Technologies, Inc. and/or its subsidiaries. -->
+<!--SPDX-License-Identifier: BSD-3-Clause-Clear -->
+<mem_logger>
+    <queues>
+        <KPI_QUEUE format="@QH61s?" />
+        <PAL_STATE_QUEUE format= "@2QIH2BIH2BIH2BIIHBQ">
+            <acd_info format="@IIII55sB" />
+        </PAL_STATE_QUEUE>
+        <GRAPH_QUEUE format="@Q2IQ" />
+        <SPF_RESET_QUEUE format="@2Q" />
+    </queues>
+    <statbufs>
+        <GRAPH_STATBUF format="@Q" />
+        <SPF_RESET_STATBUF format="@Q" />
+    </statbufs>
+</mem_logger>

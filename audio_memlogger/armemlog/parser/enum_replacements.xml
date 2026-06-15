@@ -1,0 +1,565 @@
+<!--Enum replacements file for mem logger parser
+    Copyright (c) Qualcomm Technologies, Inc. and/or its subsidiaries.
+    SPDX-License-Identifier: BSD-3-Clause-Clear.-->
+<root>
+	<pal_stream_type_t>
+		<item name = "LOW_LATENCY" value = "1" />
+		<item name = "DEEP_BUFFER" value = "2" />
+		<item name = "COMPRESSED" value = "3" />
+		<item name = "VOIP" value = "4" />
+		<item name = "VOIP_RX" value = "5" />
+		<item name = "VOIP_TX" value = "6" />
+		<item name = "VOICE_CALL_MUSIC" value = "7" />
+		<item name = "GENERIC" value = "8" />
+		<item name = "RAW" value = "9" />
+		<item name = "VOICE_ACTIVATION" value = "10" />
+		<item name = "VOICE_CALL_RECORD" value = "11" />
+		<item name = "VOICE_CALL_TX" value = "12" />
+		<item name = "VOICE_CALL_RX_TX" value = "13" />
+		<item name = "VOICE_CALL" value = "14" />
+		<item name = "LOOPBACK" value = "15" />
+		<item name = "TRANSCODE" value = "16" />
+		<item name = "VOICE_UI" value = "17" />
+		<item name = "PCM_OFFLOAD" value = "18" />
+		<item name = "ULTRA_LOW_LATENCY" value = "19" />
+		<item name = "PROXY" value = "20" />
+		<item name = "NON_TUNNEL" value = "21" />
+		<item name = "HAPTICS" value = "22" />
+		<item name = "ACD" value = "23" />
+		<item name = "CONTEXT_PROXY" value = "24" />
+		<item name = "CONTEXT_RAWDATA" value = "25" />
+		<item name = "ULTRASOUND" value = "26" />
+	</pal_stream_type_t>
+	<pal_device_id_t>
+		<item name = "PAL_DEVICE_OUT_MIN" value = "0" />
+		<item name = "PAL_DEVICE_NONE" value = "1" />
+		<item name = "PAL_DEVICE_OUT_HANDSET" value = "2"/>
+		<item name = "PAL_DEVICE_OUT_SPEAKER" value = "3" />
+		<item name = "PAL_DEVICE_OUT_WIRED_HEADSET" value = "4" />
+		<item name = "PAL_DEVICE_OUT_WIRED_HEADPHONE" value = "5" />
+		<item name = "PAL_DEVICE_OUT_LINE" value = "6" />
+		<item name = "PAL_DEVICE_OUT_BLUETOOTH_SCO" value = "7" />
+		<item name = "PAL_DEVICE_OUT_BLUETOOTH_A2DP" value = "8" />
+		<item name = "PAL_DEVICE_OUT_AUX_DIGITAL" value = "9" />
+		<item name = "PAL_DEVICE_OUT_HDMI" value = "10" />
+		<item name = "PAL_DEVICE_OUT_USB_DEVICE" value = "11" />
+		<item name = "PAL_DEVICE_OUT_USB_HEADSET" value = "12" />
+		<item name = "PAL_DEVICE_OUT_SPDIF" value = "13" />
+		<item name = "PAL_DEVICE_OUT_FM" value = "14" />
+		<item name = "PAL_DEVICE_OUT_AUX_LINE" value = "15" />
+		<item name = "PAL_DEVICE_OUT_PROXY" value = "16" />
+		<item name = "PAL_DEVICE_OUT_AUX_DIGITAL_1" value = "17" />
+		<item name = "PAL_DEVICE_OUT_HEARING_AID" value = "18" />
+		<item name = "PAL_DEVICE_OUT_HAPTICS_DEVICE" value = "19" />
+		<item name = "PAL_DEVICE_OUT_ULTRASOUND" value = "20" />
+		<item name = "PAL_DEVICE_OUT_ULTRASOUND_DEDICATED" value = "21" />
+		<item name = "PAL_DEVICE_OUT_BLUETOOTH_BLE" value = "22" />
+		<item name = "PAL_DEVICE_OUT_BLUETOOTH_BLE_BROADCAST" value = "23" />
+		<item name = "PAL_DEVICE_OUT_DUMMY" value = "24" />
+		<item name = "PAL_DEVICE_OUT_MAX" value = "25" />
+		<item name = "PAL_DEVICE_IN_HANDSET_MIC" value = "26" />
+		<item name = "PAL_DEVICE_IN_SPEAKER_MIC" value = "27" />
+		<item name = "PAL_DEVICE_IN_BLUETOOTH_SCO_HEADSET" value = "28" />
+		<item name = "PAL_DEVICE_IN_WIRED_HEADSET" value = "29" />
+		<item name = "PAL_DEVICE_IN_AUX_DIGITAL" value = "30" />
+		<item name = "PAL_DEVICE_IN_HDMI" value = "31" />
+		<item name = "PAL_DEVICE_IN_USB_ACCESSORY" value = "32" />
+		<item name = "PAL_DEVICE_IN_USB_DEVICE" value = "33" />
+		<item name = "PAL_DEVICE_IN_USB_HEADSET" value = "34" />
+		<item name = "PAL_DEVICE_IN_FM_TUNER" value = "35" />
+		<item name = "PAL_DEVICE_IN_LINE" value = "36"/>
+		<item name = "PAL_DEVICE_IN_SPDIF" value = "37"/>
+		<item name = "PAL_DEVICE_IN_PROXY" value = "38"/>
+		<item name = "PAL_DEVICE_IN_HANDSET_VA_MIC" value = "39" />
+		<item name = "PAL_DEVICE_IN_BLUETOOTH_A2DP" value = "40"/>
+		<item name = "PAL_DEVICE_IN_HEADSET_VA_MIC" value = "41"/>
+		<item name = "PAL_DEVICE_IN_VI_FEEDBACK" value = "42"/>
+		<item name = "PAL_DEVICE_IN_TELEPHONY_RX" value = "43"/>
+		<item name = "PAL_DEVICE_IN_ULTRASOUND_MIC" value = "44"/>
+		<item name = "PAL_DEVICE_IN_EXT_EC_REF" value = "45"/>
+		<item name = "PAL_DEVICE_IN_ECHO_REF" value = "46"/>
+		<item name = "PAL_DEVICE_IN_HAPTICS_VI_FEEDBACK" value = "47"/>
+		<item name = "PAL_DEVICE_IN_BLUETOOTH_BLE" value = "48"/>
+		<item name = "PAL_DEVICE_IN_MAX" value = "49"/>
+	</pal_device_id_t>
+	<pal_audio_fmt_t>
+		<item name ="PAL_AUDIO_FMT_PCM_S16_LE" value = "0x1" />
+		<item name ="PAL_AUDIO_FMT_DEFAULT_COMPRESSED" value = "0x2" />
+		<item name ="PAL_AUDIO_FMT_AAC" value = "0x3" />
+		<item name ="PAL_AUDIO_FMT_AAC_ADTS" value = "0x4" />
+		<item name ="PAL_AUDIO_FMT_AAC_ADIF" value = "0x5" />
+		<item name ="PAL_AUDIO_FMT_AAC_LATM" value = "0x6" />
+		<item name ="PAL_AUDIO_FMT_WMA_STD" value = "0x7" />
+		<item name ="PAL_AUDIO_FMT_ALAC" value = "0x8" />
+		<item name ="PAL_AUDIO_FMT_APE" value = "0x9" />
+		<item name ="PAL_AUDIO_FMT_WMA_PRO" value = "0xA" />
+		<item name ="PAL_AUDIO_FMT_FLAC" value = "0xB" />
+		<item name ="PAL_AUDIO_FMT_FLAC_OGG" value = "0xC" />
+		<item name ="PAL_AUDIO_FMT_VORBIS" value = "0xD" />
+		<item name ="PAL_AUDIO_FMT_AMR_NB" value = "0xE" />
+		<item name ="PAL_AUDIO_FMT_AMR_WB" value = "0xF" />
+		<item name ="PAL_AUDIO_FMT_AMR_WB_PLUS" value = "0x10" />
+		<item name ="PAL_AUDIO_FMT_EVRC" value = "0x11" />
+		<item name ="PAL_AUDIO_FMT_G711" value = "0x12" />
+		<item name ="PAL_AUDIO_FMT_QCELP" value = "0x13" />
+		<item name ="PAL_AUDIO_FMT_PCM_S8" value = "0x14" />
+		<item name ="PAL_AUDIO_FMT_PCM_S24_3LE" value = "0x15" />
+		<item name ="PAL_AUDIO_FMT_PCM_S24_LE" value = "0x16" />
+		<item name ="PAL_AUDIO_FMT_PCM_S32_LE" value = "0x17" />
+		<item name ="PAL_AUDIO_FMT_NON_PCM" value = "0xE0000000" />
+		<item name ="PAL_AUDIO_FMT_COMPRESSED_RANGE_BEGIN" value = "0xF0000000" />
+		<item name ="PAL_AUDIO_FMT_COMPRESSED_EXTENDED_RANGE_BEGIN" value = "0xF0000F00" />
+		<item name ="PAL_AUDIO_FMT_COMPRESSED_EXTENDED_RANGE_END" value = "0xF0000FFF" />
+	</pal_audio_fmt_t>
+	<pal_stream_direction_t>
+		<item name = "PAL_AUDIO_OUTPUT" value = "0x1" />
+		<item name = "PAL_AUDIO_INPUT" value = "0x2" />
+		<item name = "PAL_AUDIO_INPUT_OUTPUT" value = "0x3" />
+	</pal_stream_direction_t>
+	<pal_stream_flags_t>
+		<item name = "PAL_STREAM_FLAG_TIMESTAMP" value = "0x1" />
+		<item name = "PAL_STREAM_FLAG_NON_BLOCKING" value = "0x2" />
+		<item name = "PAL_STREAM_FLAG_MMAP" value = "0x4" />
+		<item name = "PAL_STREAM_FLAG_MMAP_NO_IRQ" value = "0x8" />
+		<item name = "PAL_STREAM_FLAG_EXTERN_MEM" value = "0x10" />
+		<item name = "PAL_STREAM_FLAG_SRCM_INBAND" value = "0x20" />
+		<item name = "PAL_STREAM_FLAG_EOF" value = "0x40" />
+	</pal_stream_flags_t>
+	<pal_param_id_type_t>
+		<item name = "PAL_PARAM_ID_LOAD_SOUND_MODEL" value = "0" />
+		<item name = "PAL_PARAM_ID_RECOGNITION_CONFIG" value = "1" />
+		<item name = "PAL_PARAM_ID_ECNS_ON_OFF" value = "2" />
+		<item name = "PAL_PARAM_ID_DIRECTION_OF_ARRIVAL" value = "3" />
+		<item name = "PAL_PARAM_ID_UIEFFECT" value = "4" />
+		<item name = "PAL_PARAM_ID_STOP_BUFFERING" value = "5" />
+		<item name = "PAL_PARAM_ID_CODEC_CONFIGURATION" value = "6" />
+		<item name = "PAL_PARAM_ID_DEVICE_CONNECTION" value = "7" />
+		<item name = "PAL_PARAM_ID_SCREEN_STATE" value = "8" />
+		<item name = "PAL_PARAM_ID_CHARGING_STATE" value = "9" />
+		<item name = "PAL_PARAM_ID_DEVICE_ROTATION" value = "10" />
+		<item name = "PAL_PARAM_ID_BT_SCO" value = "11" />
+		<item name = "PAL_PARAM_ID_BT_SCO_WB" value = "12" />
+		<item name = "PAL_PARAM_ID_BT_SCO_SWB" value = "13" />
+		<item name = "PAL_PARAM_ID_BT_A2DP_RECONFIG" value = "14" />
+		<item name = "PAL_PARAM_ID_BT_A2DP_RECONFIG_SUPPORTED" value = "15" />
+		<item name = "PAL_PARAM_ID_BT_A2DP_SUSPENDED" value = "16" />
+		<item name = "PAL_PARAM_ID_BT_A2DP_TWS_CONFIG" value = "17" />
+		<item name = "PAL_PARAM_ID_BT_A2DP_ENCODER_LATENCY" value = "18" />
+		<item name = "PAL_PARAM_ID_DEVICE_CAPABILITY" value = "19" />
+		<item name = "PAL_PARAM_ID_GET_SOUND_TRIGGER_PROPERTIES" value = "20" />
+		<item name = "PAL_PARAM_ID_TTY_MODE" value = "21" />
+		<item name = "PAL_PARAM_ID_VOLUME_BOOST" value = "22" />
+		<item name = "PAL_PARAM_ID_SLOW_TALK" value = "23" />
+		<item name = "PAL_PARAM_ID_SPEAKER_RAS" value = "24" />
+		<item name = "PAL_PARAM_ID_SP_MODE" value = "25" />
+		<item name = "PAL_PARAM_ID_GAIN_LVL_MAP" value = "26" />
+		<item name = "PAL_PARAM_ID_GAIN_LVL_CAL" value = "27" />
+		<item name = "PAL_PARAM_ID_GAPLESS_MDATA" value = "28" />
+		<item name = "PAL_PARAM_ID_HD_VOICE" value = "29" />
+		<item name = "PAL_PARAM_ID_WAKEUP_ENGINE_CONFIG" value = "30" />
+		<item name = "PAL_PARAM_ID_WAKEUP_BUFFERING_CONFIG" value = "31" />
+		<item name = "PAL_PARAM_ID_WAKEUP_ENGINE_RESET" value = "32" />
+		<item name = "PAL_PARAM_ID_WAKEUP_MODULE_VERSION" value = "33" />
+		<item name = "PAL_PARAM_ID_WAKEUP_CUSTOM_CONFIG" value = "34" />
+		<item name = "PAL_PARAM_ID_UNLOAD_SOUND_MODEL" value = "35" />
+		<item name = "PAL_PARAM_ID_MODULE_CONFIG" value = "36" />
+		<item name = "PAL_PARAM_ID_BT_A2DP_LC3_CONFIG" value = "37" />
+		<item name = "PAL_PARAM_ID_PROXY_CHANNEL_CONFIG" value = "38" />
+		<item name = "PAL_PARAM_ID_CONTEXT_LIST" value = "39" />
+		<item name = "PAL_PARAM_ID_HAPTICS_INTENSITY" value = "40" />
+		<item name = "PAL_PARAM_ID_HAPTICS_VOLUME" value = "41" />
+		<item name = "PAL_PARAM_ID_BT_A2DP_DECODER_LATENCY" value = "42" />
+		<item name = "PAL_PARAM_ID_CUSTOM_CONFIGURATION" value = "43" />
+		<item name = "PAL_PARAM_ID_KW_TRANSFER_LATENCY" value = "44" />
+		<item name = "PAL_PARAM_ID_BT_A2DP_FORCE_SWITCH" value = "45" />
+		<item name = "PAL_PARAM_ID_BT_SCO_LC3" value = "46" />
+		<item name = "PAL_PARAM_ID_DEVICE_MUTE" value = "47" />
+	</pal_param_id_type_t>
+	<all_key_ids>
+		<item name = "STREAMRX" value = "0xA1000000" />
+		<item name = "DEVICERX" value = "0xA2000000" />
+		<item name = "DEVICETX" value = "0xA3000000" />
+		<item name = "VOLUME" value = "0xA4000000" />
+		<item name = "SAMPLINGRATE" value = "0xA5000000" />
+		<item name = "BITWIDTH" value = "0xA6000000" />
+		<item name = "PAUSE" value = "0xA7000000" />
+		<item name = "MUTE" value = "0xA8000000" />
+		<item name = "CHANNELS" value = "0xA9000000" />
+		<item name = "ECNS" value = "0xAA000000" />
+		<item name = "INSTANCE" value = "0xAB000000" />
+		<item name = "DEVICEPP_RX" value = "0xAC000000" />
+		<item name = "DEVICEPP_TX" value = "0xAD000000" />
+		<item name = "MEDIA_FMT_ID" value = "0xAE000000" />
+		<item name = "STREAMPP_RX" value = "0xAF000000" />
+		<item name = "STREAMPP_TX" value = "0xB0000000" />
+		<item name = "STREAMTX" value = "0xB1000000" />
+		<item name = "EQUALIZER_SWITCH" value = "0xB2000000" />
+		<item name = "VSID" value = "0xB3000000" />
+		<item name = "BT_PROFILE" value = "0xB4000000" />
+		<item name = "BT_FORMAT" value = "0xB5000000" />
+		<item name = "PBE_SWITCH" value = "0xB6000000" />
+		<item name = "BASS_BOOST_SWITCH" value = "0xB7000000" />
+		<item name = "REVERB_SWITCH" value = "0xB8000000" />
+		<item name = "VIRTUALIZER_SWITCH" value = "0xB9000000" />
+		<item name = "SW_SIDETONE" value = "0xBA000000" />
+		<item name = "TAG_KEY_SLOW_TALK" value = "0xBB000000" />
+		<item name = "STREAM_CONFIG" value = "0xBC000000" />
+		<item name = "TAG_KEY_MUX_DEMUX_CONFIG" value = "0xBD000000" />
+		<item name = "SPK_PRO_DEV_MAP" value = "0xBE000000" />
+		<item name = "SPK_PRO_VI_MAP" value = "0xBF000000" />
+		<item name = "RAS_SWITCH" value = "0xD0000000" />
+		<item name = "PROXY_TX_TYPE" value = "0xD1000000" />
+		<item name = "GAIN" value = "0xD2000000" />
+		<item name = "STREAM" value = "0xD3000000" />
+		<item name = "STREAM_CHANNELS" value = "0xD4000000" />
+		<item name = "PCM_DEEP_BUFFER" value = "0xA1000001" />
+		<item name = "PCM_RX_LOOPBACK" value = "0xA1000003" />
+		<item name = "VOIP_RX_PLAYBACK" value = "0xA1000005" />
+		<item name = "COMPRESSED_OFFLOAD_PLAYBACK" value = "0xA100000A" />
+		<item name = "HFP_RX_PLAYBACK" value = "0xA100000C" />
+		<item name = "HFP_TX_PLAYBACK" value = "0xA100000D" />
+		<item name = "PCM_LL_PLAYBACK" value = "0xA100000E" />
+		<item name = "PCM_OFFLOAD_PLAYBACK" value = "0xA100000F" />
+		<item name = "VOICE_CALL_RX" value = "0xA1000010" />
+		<item name = "PCM_ULL_PLAYBACK" value = "0xA1000011" />
+		<item name = "PCM_PROXY_PLAYBACK" value = "0xA1000012" />
+		<item name = "INCALL_MUSIC" value = "0xA1000013" />
+		<item name = "GENERIC_PLAYBACK" value = "0xA1000014" />
+		<item name = "HAPTICS_PLAYBACK" value = "0xA1000015" />
+		<item name = "PCM_RECORD" value = "0xB1000001" />
+		<item name = "PCM_TX_LOOPBACK" value = "0xB1000002" />
+		<item name = "VOICE_UI" value = "0xB1000003" />
+		<item name = "VOIP_TX_RECORD" value = "0xB1000004" />
+		<item name = "HFP_RX_CAPTURE" value = "0xB1000005" />
+		<item name = "HFP_TX_CAPTURE" value = "0xB1000006" />
+		<item name = "VOICE_CALL_TX" value = "0xB1000007" />
+		<item name = "DEEPBUFFER_RECORD" value = "0xB1000008" />
+		<item name = "RAW_RECORD" value = "0xB1000009" />
+		<item name = "PCM_ULL_RECORD" value = "0xB100000A" />
+		<item name = "PCM_PROXY_RECORD" value = "0xB100000B" />
+		<item name = "INCALL_RECORD" value = "0xB100000C" />
+		<item name = "ACD" value = "0xB100000D" />
+		<item name = "CONTEXT_RAWDATA" value = "0xB100000E" />
+		<item name = "SPEAKER" value = "0xA2000001" />
+		<item name = "HEADPHONES" value = "0xA2000002" />
+		<item name = "BT_RX" value = "0xA2000003" />
+		<item name = "HANDSET" value = "0xA2000004" />
+		<item name = "USB_RX" value = "0xA2000005" />
+		<item name = "HDMI_RX" value = "0xA2000006" />
+		<item name = "PROXY_RX" value = "0xA2000007" />
+		<item name = "PROXY_RX_VOICE" value = "0xA2000008" />
+		<item name = "HAPTICS_DEVICE" value = "0xA2000009" />
+		<item name = "ULTRASOUND_RX" value = "0xA200000A" />
+		<item name = "SPEAKER_MIC" value = "0xA3000001" />
+		<item name = "BT_TX" value = "0xA3000002" />
+		<item name = "HEADPHONE_MIC" value = "0xA3000003" />
+		<item name = "HANDSETMIC" value = "0xA3000004" />
+		<item name = "USB_TX" value = "0xA3000005" />
+		<item name = "HANDSETMIC_VA" value = "0xA3000006" />
+		<item name = "HEADSETMIC_VA" value = "0xA3000007" />
+		<item name = "PROXY_TX" value = "0xA3000008" />
+		<item name = "VI_TX" value = "0xA3000009" />
+		<item name = "FM_TX" value = "0xA300000A" />
+		<item name = "ULTRASOUND_TX" value = "0xA300000B" />
+		<item name = "DEVICEPP_RX_DEFAULT" value = "0xAC000001" />
+		<item name = "DEVICEPP_RX_AUDIO_MBDRC" value = "0xAC000002" />
+		<item name = "DEVICEPP_RX_VOIP_MBDRC" value = "0xAC000003" />
+		<item name = "DEVICEPP_RX_HFPSINK" value = "0xAC000004" />
+		<item name = "DEVICEPP_RX_VOICE_DEFAULT" value = "0xAC000005" />
+		<item name = "DEVICEPP_RX_ULTRASOUND_GENERATOR" value = "0xAC000006" />
+		<item name = "DEVICEPP_TX_FLUENCE_FFECNS" value = "0xAD000001" />
+		<item name = "DEVICEPP_TX_AUDIO_FLUENCE_SMECNS" value = "0xAD000002" />
+		<item name = "DEVICEPP_TX_AUDIO_FLUENCE_ENDFIRE" value = "0xAD000003" />
+		<item name = "DEVICEPP_TX_AUDIO_FLUENCE_PRO" value = "0xAD000004" />
+		<item name = "DEVICEPP_TX_VOIP_FLUENCE_PRO" value = "0xAD000005" />
+		<item name = "DEVICEPP_TX_HFP_SINK_FLUENCE_SMECNS" value = "0xAD000006" />
+		<item name = "DEVICEPP_TX_VOIP_FLUENCE_SMECNS" value = "0xAD000007" />
+		<item name = "DEVICEPP_TX_VOICE_FLUENCE_SMECNS" value = "0xAD000008" />
+		<item name = "DEVICEPP_TX_VOICE_FLUENCE_ENDFIRE" value = "0xAD000009" />
+		<item name = "DEVICEPP_TX_VOICE_FLUENCE_PRO" value = "0xAD00000A" />
+		<item name = "DEVICEPP_TX_FLUENCE_FFNS" value = "0xAD00000B" />
+		<item name = "DEVICEPP_TX_RAW_LPI" value = "0xAD00000C" />
+		<item name = "DEVICEPP_TX_VOIP_FLUENCE_ENDFIRE" value = "0xAD00000D" />
+		<item name = "DEVICEPP_TX_RAW_NLPI" value = "0xAD00000E" />
+		<item name = "DEVICEPP_TX_VOICE_FLUENCE_NN_SM" value = "0xAD00000F" />
+		<item name = "DEVICEPP_TX_VOIP_FLUENCE_NN_SM" value = "0xAD000010" />
+		<item name = "DEVICEPP_TX_ULTRASOUND_DETECTOR" value = "0xAD000011" />
+		<item name = "STREAMPP_RX_DEFAULT" value = "0xAF000001" />
+		<item name = "STREAMPP_TX_DEFAULT" value = "0xB0000001" />
+		<item name = "MEDIA_FMT_PCM" value = "0xAE000001" />
+		<item name = "MEDIA_FMT_AAC" value = "0xAE000002" />
+		<item name = "MEDIA_FMT_ALAC" value = "0xAE000003" />
+		<item name = "MEDIA_FMT_APE" value = "0xAE000004" />
+		<item name = "MEDIA_FMT_WMAPRO" value = "0xAE000005" />
+		<item name = "MEDIA_FMT_WMASTD" value = "0xAE000006" />
+		<item name = "MEDIA_FMT_FLAC" value = "0xAE000007" />
+		<item name = "MEDIA_FMT_VORBIS" value = "0xAE000008" />
+		<item name = "MEDIA_FMT_MP3" value = "0xAE000009" />
+		<item name = "MEDIA_FMT_AMRWBPLUS" value = "0xAE00000A" />
+		<item name = "MEDIA_FMT_AMRWB" value = "0xAE00000B" />
+		<item name = "MEDIA_FMT_AMRNB" value = "0xAE00000C" />
+		<item name = "MEDIA_FMT_EVRC" value = "0xAE00000D" />
+		<item name = "MEDIA_FMT_G711" value = "0xAE00000E" />
+		<item name = "MEDIA_FMT_QCELP" value = "0xAE00000F" />
+		<item name = "VSID_DEFAULT" value = "0xB3000001" />
+		<item name = "VSID_VOICE1" value = "0xB3000002" />
+		<item name = "VSID_VOICE2" value = "0xB3000003" />
+		<item name = "VSID_VOICE1_LB" value = "0xB3000004" />
+		<item name = "VSID_VOICE2_LB" value = "0xB3000005" />
+		<item name = "VSID_VOICE1" value = "0x11C05000" />
+		<item name = "VSID_VOICE2" value = "0x11DC5000" />
+		<item name = "VSID_VOICE1_LB" value = "0x12006000" />
+		<item name = "VSID_VOICE2_LB" value = "0x121C6000" />
+		<item name = "PROXY_TX_DEFAULT" value = "0xD1000001" />
+		<item name = "PROXY_TX_WFD" value = "0xD1000002" />
+		<item name = "PROXY_TX_VOICE_RX" value = "0xD1000003" />
+		<item name = "NT_DECODE" value = "0xD2000001" />
+		<item name = "NT_ENCODE" value = "0xD2000002" />
+		<item name = "GENERIC" value = "0xB5000001" />
+		<item name = "LDAC" value = "0xB5000002" />
+		<item name = "APTX_ADAPTIVE" value = "0xB5000003" />
+		<item name = "SWB" value = "0xB5000004" />
+		<item name = "LC3" value = "0xB5000005" />
+		<item name = "SW_SIDETONE_ON" value = "0xBA000001" />
+		<item name = "STREAM_CFG_VUI_SVA" value = "0xBC000001" />
+		<item name = "STREAM_CFG_VUI_HW" value = "0xBC000002" />
+		<item name = "STREAM_CFG_VUI_SVA5" value = "0xBC000003" />
+		<item name = "STREAM_CFG_VUI_CUSTOM" value = "0xBC000004" />
+		<item name = "STREAM_CFG_VUI_GMM" value = "0xBC000005" />
+		<item name = "STREAM_CFG_VUI_PDK" value = "0xBC000006" />
+		<item name = "STREAM_CFG_ACD_QC" value = "0xBC000007" />
+		<item name = "SHMEM_ENDPOINT" value = "0xC0000001" />
+		<item name = "STREAM_INPUT_MEDIA_FORMAT" value = "0xC0000002" />
+		<item name = "STREAM_OUTPUT_MEDIA_FORMAT" value = "0xC0000003" />
+		<item name = "DEVICE_SVA" value = "0xC0000008" />
+		<item name = "DEVICE_ADAM" value = "0xC0000009" />
+		<item name = "DEVICE_MFC" value = "0xC000000C" />
+		<item name = "STREAM_PCM_DECODER" value = "0xC000000E" />
+		<item name = "STREAM_PCM_ENCODER" value = "0xC000000F" />
+		<item name = "STREAM_PCM_CONVERTER" value = "0xC0000010" />
+		<item name = "STREAM_SPR" value = "0xC0000013" />
+		<item name = "BT_PLACEHOLDER_ENCODER" value = "0xC0000020" />
+		<item name = "COP_PACKETIZER_V0" value = "0xC0000021" />
+		<item name = "RAT_RENDER" value = "0xC0000022" />
+		<item name = "BT_PCM_CONVERTER" value = "0xC0000023" />
+		<item name = "BT_PLACEHOLDER_DECODER" value = "0xC0000024" />
+		<item name = "MODULE_VI" value = "0xC0000028" />
+		<item name = "MODULE_SP" value = "0xC0000029" />
+		<item name = "MODULE_GAPLESS" value = "0xC000002A" />
+		<item name = "WR_SHMEM_ENDPOINT" value = "0xC000002C" />
+		<item name = "RD_SHMEM_ENDPOINT" value = "0xC000002E" />
+		<item name = "COP_PACKETIZER_V2" value = "0xC000002F" />
+		<item name = "COP_DEPACKETIZER_V2" value = "0xC0000030" />
+		<item name = "CONTEXT_DETECTION_ENGINE" value = "0xC0000031" />
+		<item name = "ULTRASOUND_DETECTION_MODULE" value = "0xC0000032" />
+	</all_key_ids>
+	<exit_codes>
+		<item name = "FAILED" value = "-1" />
+		<item name = "SUCCESS" value = "0" />
+		<item name = "TRUE" value = "1" /> <!-- changed this to a true as some functions return bool and we do not use this error code -->
+		<item name = "ENOENT" value = "2" />
+		<item name = "ESRCH" value = "3" />
+		<item name = "EINTR" value = "4" />
+		<item name = "EIO" value = "5" />
+		<item name = "ENXIO" value = "6" />
+		<item name = "E2BIG" value = "7" />
+		<item name = "ENOEXEC" value = "8" />
+		<item name = "EBADF" value = "9" />
+		<item name = "ECHILD" value = "10" />
+		<item name = "EAGAIN" value = "11" />
+		<item name = "ENOMEM" value = "12" />
+		<item name = "EACCES" value = "13" />
+		<item name = "EFAULT" value = "14" />
+		<item name = "ENOTBLK" value = "15" />
+		<item name = "EBUSY" value = "16" />
+		<item name = "EEXIST" value = "17" />
+		<item name = "EXDEV" value = "18" />
+		<item name = "ENODEV" value = "19" />
+		<item name = "ENOTDIR" value = "20" />
+		<item name = "EISDIR" value = "21" />
+		<item name = "EINVAL" value = "22" />
+		<item name = "ENFILE" value = "23" />
+		<item name = "EMFILE" value = "24" />
+		<item name = "ENOTTY" value = "25" />
+		<item name = "ETXTBSY" value = "26" />
+		<item name = "EFBIG" value = "27" />
+		<item name = "ENOSPC" value = "28" />
+		<item name = "ESPIPE" value = "29" />
+		<item name = "EROFS" value = "30" />
+		<item name = "EMLINK" value = "31" />
+		<item name = "EPIPE" value = "32" />
+		<item name = "EDOM" value = "33" />
+		<item name = "ERANGE" value = "34" />
+		<item name = "ENOMSG" value = "35" />
+		<item name = "EIDRM" value = "36" />
+		<item name = "ECHRNG" value = "37" />
+		<item name = "EL2NSYNC" value = "38" />
+		<item name = "EL3HLT" value = "39" />
+		<item name = "EL3RST" value = "40" />
+		<item name = "ELNRNG" value = "41" />
+		<item name = "EUNATCH" value = "42" />
+		<item name = "ENOCSI" value = "43" />
+		<item name = "EL2HLT" value = "44" />
+		<item name = "EDEADLK" value = "45" />
+		<item name = "ENOLCK" value = "46" />
+		<item name = "EBADE" value = "50" />
+		<item name = "EBADR" value = "51" />
+		<item name = "EXFULL" value = "52" />
+		<item name = "ENOANO" value = "53" />
+		<item name = "EBADRQC" value = "54" />
+		<item name = "EBADSLT" value = "55" />
+		<item name = "EDEADLOCK" value = "56" />
+		<item name = "EBFONT" value = "57" />
+		<item name = "ENOSTR" value = "60" />
+		<item name = "ENODATA" value = "61" />
+		<item name = "ETIME" value = "62" />
+		<item name = "ENOSR" value = "63" />
+		<item name = "ENONET" value = "64" />
+		<item name = "ENOPKG" value = "65" />
+		<item name = "EREMOTE" value = "66" />
+		<item name = "ENOLINK" value = "67" />
+		<item name = "EADV" value = "68" />
+		<item name = "ESRMNT" value = "69" />
+		<item name = "ECOMM" value = "70" />
+		<item name = "EPROTO" value = "71" />
+		<item name = "EMULTIHOP" value = "74" />
+		<item name = "ELBIN" value = "75" />
+		<item name = "EDOTDOT" value = "76" />
+		<item name = "EBADMSG" value = "77" />
+		<item name = "EFTYPE" value = "79" />
+		<item name = "ENOTUNIQ" value = "80" />
+		<item name = "EBADFD" value = "81" />
+		<item name = "EREMCHG" value = "82" />
+		<item name = "ELIBACC" value = "83" />
+		<item name = "ELIBBAD" value = "84" />
+		<item name = "ELIBSCN" value = "85" />
+		<item name = "ELIBMAX" value = "86" />
+		<item name = "ELIBEXEC" value = "87" />
+		<item name = "ENOSYS" value = "88" />
+		<item name = "ENMFILE" value = "89" />
+		<item name = "ENOTEMPTY" value = "90" />
+		<item name = "ENAMETOOLONG" value = "91" />
+		<item name = "ELOOP" value = "92" />
+		<item name = "EOPNOTSUPP" value = "95" />
+		<item name = "EPFNOSUPPORT" value = "96" />
+		<item name = "ECONNRESET" value = "104" />
+		<item name = "ENOBUFS" value = "105" />
+		<item name = "EAFNOSUPPORT" value = "106" />
+		<item name = "EPROTOTYPE" value = "107" />
+		<item name = "ENOTSOCK" value = "108" />
+		<item name = "ENOPROTOOPT" value = "109" />
+		<item name = "ESHUTDOWN" value = "110" />
+		<item name = "ECONNREFUSED" value = "111" />
+		<item name = "EADDRINUSE" value = "112" />
+		<item name = "ECONNABORTED" value = "113" />
+		<item name = "ENETUNREACH" value = "114" />
+		<item name = "ENETDOWN" value = "115" />
+		<item name = "ETIMEDOUT" value = "116" />
+		<item name = "EHOSTDOWN" value = "117" />
+		<item name = "EHOSTUNREACH" value = "118" />
+		<item name = "EINPROGRESS" value = "119" />
+		<item name = "EALREADY" value = "120" />
+		<item name = "EDESTADDRREQ" value = "121" />
+		<item name = "EMSGSIZE" value = "122" />
+		<item name = "EPROTONOSUPPORT" value = "123" />
+		<item name = "ESOCKTNOSUPPORT" value = "124" />
+		<item name = "EADDRNOTAVAIL" value = "125" />
+		<item name = "ENETRESET" value = "126" />
+		<item name = "EISCONN" value = "127" />
+		<item name = "ENOTCONN" value = "128" />
+		<item name = "ETOOMANYREFS" value = "129" />
+		<item name = "EPROCLIM" value = "130" />
+		<item name = "EUSERS" value = "131" />
+		<item name = "EDQUOT" value = "132" />
+		<item name = "ESTALE" value = "133" />
+		<item name = "ENOTSUP" value = "134" />
+		<item name = "ENOMEDIUM" value = "135" />
+		<item name = "ENOSHARE" value = "136" />
+		<item name = "ECASECLASH" value = "137" />
+		<item name = "EILSEQ" value = "138" />
+		<item name = "EOVERFLOW" value = "139" />
+	</exit_codes>
+	<VSID>
+		<item name = "VOICEMMODE1" value = "0x11C05000" />
+		<item name = "VOICEMMODE2" value = "0x11DC5000" />
+	</VSID>
+	<CALL_STATE>
+		<item name = "CALL_INACTIVE" value = "1" />
+		<item name = "CALL_ACTIVE" value = "2" />
+	</CALL_STATE>
+	<stream_state_t>
+		<item name = "STREAM_IDLE" value = "0" />
+		<item name = "STREAM_INIT" value = "1" />
+		<item name = "STREAM_OPENED" value = "2" />
+		<item name = "STREAM_STARTED" value = "3" />
+		<item name = "STREAM_PAUSED" value = "4" />
+		<item name = "STREAM_SUSPENDED" value = "5" />
+		<item name = "STREAM_STOPPED"  value = "6" />
+	</stream_state_t>
+	<setConfig_tags>
+		<item name = "MUTE_TAG"    value = "0" />
+		<item name = "UNMUTE_TAG"  value = "1" />
+		<item name = "PAUSE_TAG"  value = "2" />
+		<item name = "RESUME_TAG"  value = "3" />
+		<item name = "MFC_SR_8K"  value = "4" />
+		<item name = "MFC_SR_16K"  value = "5" />
+		<item name = "MFC_SR_32K"  value = "6" />
+		<item name = "MFC_SR_44K"  value = "7" />
+		<item name = "MFC_SR_48K"  value = "8" />
+		<item name = "MFC_SR_96K"  value = "9" />
+		<item name = "MFC_SR_192K"  value = "10" />
+		<item name = "MFC_SR_384K"  value = "11" />
+		<item name = "ECNS_ON_TAG"  value = "12" />
+		<item name = "ECNS_OFF_TAG"  value = "13" />
+		<item name = "EC_ON_TAG"  value = "14" />
+		<item name = "NS_ON_TAG"  value = "15" />
+		<item name = "CHS_1"  value = "16" />
+		<item name = "CHS_2"  value = "17" />
+		<item name = "CHS_3"  value = "18" />
+		<item name = "CHS_4"  value = "19" />
+		<item name = "CHS_5"  value = "20" />
+		<item name = "CHS_6"  value = "21" />
+		<item name = "CHS_7"  value = "22" />
+		<item name = "CHS_8"  value = "23" />
+		<item name = "BW_16"  value = "24" />
+		<item name = "BW_24"  value = "25" />
+		<item name = "BW_32"  value = "26" />
+		<item name = "TTY_MODE"  value = "27" />
+		<item name = "VOICE_SLOW_TALK_OFF"  value = "28" />
+		<item name = "VOICE_SLOW_TALK_ON"  value = "29" />
+		<item name = "VOICE_VOLUME_BOOST"  value = "30" />
+		<item name = "SPKR_PROT_ENABLE"  value = "31" />
+		<item name = "INCALL_RECORD_UPLINK"  value = "32" />
+		<item name = "INCALL_RECORD_DOWNLINK"  value = "33" />
+		<item name = "INCALL_RECORD_UPLINK_DOWNLINK_MONO"  value = "34" />
+		<item name = "INCALL_RECORD_UPLINK_DOWNLINK_STEREO"  value = "35" />
+		<item name = "SPKR_VI_ENABLE"  value = "36" />
+		<item name = "VOICE_HD_VOICE"  value = "37" />
+		<item name = "LPI_LOGGING_ON"  value = "38" />
+		<item name = "LPI_LOGGING_OFF"  value = "39" />
+		<item name = "DEVICE_MUTE"  value = "40" />
+		<item name = "DEVICE_UNMUTE"  value = "41" />
+		<item name = "CHANNEL_INFO"  value = "42" />
+		<item name = "CHARGE_CONCURRENCY_ON_TAG"  value = "43" />
+		<item name = "CHARGE_CONCURRENCY_OFF_TAG"  value = "44" />
+		<item name = "VSID"  value = "-1291845632" />
+		<item name = "STREAM_VOLUME"  value = "-1073741811" />
+		<item name = "DEVICE_PP_MBDRC"  value = "-1073741781" />
+	</setConfig_tags>
+	<graph_state>
+		<item name = "GRAPH_START" value = "0" />
+		<item name = "GRAPH_STOP" value = "1" />
+		<item name = "GRAPH_OPEN" value = "2" />
+		<item name = "GRAPH_CLOSE" value = "3" />
+		<item name = "GRAPH_PAUSE" value = "4" />
+		<item name = "GRAPH_RESUME" value = "5" />
+	</graph_state>
+	<graph_success>
+		<item name = "Success" value = "0" />
+		<item name = "Fail" value = "1" />
+	</graph_success>
+	<spf_reset_state>
+		<item name = "DOWN" value = "0" />
+		<item name = "UP" value = "1" />
+	</spf_reset_state>
+</root>
