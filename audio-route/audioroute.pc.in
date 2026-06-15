@@ -1,0 +1,10 @@
+prefix=@prefix@
+exec_prefix=@exec_prefix@
+libdir=@libdir@
+includedir=@includedir@
+
+Name: audioroute
+Description: audioroute library
+Version: @VERSION@
+Libs: -L${libdir} -laudioroute
+Cflags: -I${includedir}/audio_route -I${includedir}/audio_route/system
