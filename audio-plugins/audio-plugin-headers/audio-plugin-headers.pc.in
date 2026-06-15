@@ -1,0 +1,10 @@
+prefix=@prefix@
+exec_prefix=@exec_prefix@
+libdir=@libdir@
+includedir=@includedir@
+
+Name: mm-audio-headers
+Description: Common codec-plugin-headers for codec plugins
+Version: @VERSION@
+Libs: -L${libdir}
+Cflags: -I${includedir}/interface
