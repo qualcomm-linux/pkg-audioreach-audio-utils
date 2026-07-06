@@ -3,7 +3,7 @@
 # Requires autoconf tool later than 2.61
 AC_PREREQ(2.69)
 # Initialize the smwrapper package version 1.0.0
-AC_INIT([audioroute],1.0.0)
+AC_INIT([audioreach-audio-utils],1.0.0)
 # Does not strictly follow GNU Coding standards
 AM_INIT_AUTOMAKE([foreign subdir-objects])
 
@@ -26,5 +26,9 @@ m4_define([LT_PATCH], [0])
 AC_SUBST([LT_VERSION], LT_MAJOR.LT_MINOR.LT_PATCH)
 AC_SUBST([LT_VERSION_NUMBER], LT_MAJOR:LT_MINOR:LT_PATCH)
 
-AC_CONFIG_FILES([ Makefile audioroute.pc ])
+AC_CONFIG_SUBDIRS([
+        audio-route
+])
+
+AC_CONFIG_FILES([ Makefile])
 AC_OUTPUT
