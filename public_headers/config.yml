@@ -7,3 +7,5 @@ branches:
         headers:
           - audio-route/include/system/*.h
           - audio-route/include/audio_route/*.h
+abi_checks:
+  - path: build/usr/lib/libaudioroute.so
