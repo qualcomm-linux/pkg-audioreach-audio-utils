@@ -5,6 +5,6 @@ includedir=@includedir@
 
 Name: audioroute
 Description: audioroute library
-Version: @VERSION@
+Version: @LT_VERSION@
 Libs: -L${libdir} -laudioroute
 Cflags: -I${includedir}/audio_route -I${includedir}/audio_route/system
