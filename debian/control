@@ -4,6 +4,11 @@ Priority: optional
 Maintainer: Sairamreddy Bojja <sbojja@qti.qualcomm.com>
 Rules-Requires-Root: no
 Build-Depends: debhelper-compat (= 13),
+ libglib2.0-0,
+ libglib2.0-dev,
+ libtinyalsa,
+ libtinyalsa-dev,
+ libexpat1-dev,
 Standards-Version: 4.6.2
 Homepage: https://github.com/Audioreach/audioreach-audio-utils
 Vcs-Git: https://github.com/qualcomm-linux/pkg-audioreach-audio-utils -b debian/latest
@@ -12,7 +17,9 @@ Vcs-Browser: https://github.com/qualcomm-linux/pkg-audioreach-audio-utils
 Package: audioreach-audio-utils
 Architecture: arm64
 Section: libs
-Depends: ${misc:Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends},
+ libtinyalsa2,
+  libglib2.0-0,
 Description: AudioReach audio utilities
  Provides helper libraries and APIs for audio routing and
  configuration used by the AudioReach platform.
