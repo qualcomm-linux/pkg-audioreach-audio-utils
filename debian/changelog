@@ -1,9 +1,5 @@
-audioreach-audio-utils (1.0.1-1) UNRELEASED; urgency=medium
+audioreach-audio-utils (1.0.1-0qli+staging1~) UNRELEASED; urgency=medium
 
-  [ Agathe Porte ]
   * Initial release.
 
-  [ GitHub Service Bot ]
-  * New upstream release
-
- -- GitHub Service Bot <githubservice@qti.qualcomm.com>  Mon, 06 Jul 2026 09:12:03 +0000
+ -- Agathe Porte <agathe.porte@oss.qualcomm.com>  Wed, 08 Jul 2026 16:20:14 +0200
