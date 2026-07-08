@@ -16,8 +16,6 @@ Package: audioreach-audio-utils
 Architecture: arm64
 Section: libs
 Depends: ${shlibs:Depends}, ${misc:Depends},
- libtinyalsa2,
-  libglib2.0-0,
 Description: AudioReach audio utilities
  Provides helper libraries and APIs for audio routing and
  configuration used by the AudioReach platform.
