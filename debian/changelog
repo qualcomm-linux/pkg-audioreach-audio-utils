@@ -1,8 +1,9 @@
-audioreach-audio-utils (1.0.1-0qli+staging1~bpo13+1~) UNRELEASED; urgency=medium
+audioreach-audio-utils (1.0.1-0qli+staging1~bpo13+1) trixie; urgency=medium
 
+  [ Agathe Porte ]
   * Rebuild for trixie.
 
- -- Agathe Porte <agathe.porte@oss.qualcomm.com>  Thu, 09 Jul 2026 15:37:34 +0200
+ -- root <root@ad901fc0c5c1>  Thu, 09 Jul 2026 13:39:06 +0000
 
 audioreach-audio-utils (1.0.1-0qli+staging1) forky; urgency=medium
 
