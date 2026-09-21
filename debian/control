@@ -2,9 +2,9 @@ Source: audioreach-audio-utils
 Section: misc
 Maintainer: Sairamreddy Bojja <sbojja@qti.qualcomm.com>
 Build-Depends: debhelper-compat (= 13),
- libglib2.0-dev,
  libtinyalsa-dev,
  libexpat1-dev,
+ pkgconf,
 Standards-Version: 4.6.2
 Homepage: https://github.com/Audioreach/audioreach-audio-utils
 Vcs-Git: https://github.com/qualcomm-linux/pkg-audioreach-audio-utils.git
