@@ -10,7 +10,7 @@ Homepage: https://github.com/Audioreach/audioreach-audio-utils
 Vcs-Git: https://github.com/qualcomm-linux/pkg-audioreach-audio-utils.git
 Vcs-Browser: https://github.com/qualcomm-linux/pkg-audioreach-audio-utils
 
-Package: audioreach-audio-utils
+Package: libaudioroute1
 Architecture: arm64
 Section: libs
 Depends: ${shlibs:Depends}, ${misc:Depends},
@@ -18,7 +18,7 @@ Description: AudioReach audio utilities
  Provides helper libraries and APIs for audio routing and
  configuration used by the AudioReach platform.
 
-Package: audioreach-audio-utils-dev
+Package: libaudioroute-dev
 Architecture: arm64
 Description: AudioReach audio utils - development files
  AudioReach audio utilities
@@ -26,6 +26,6 @@ Description: AudioReach audio utils - development files
  configuration used by the AudioReach platform.
  .
  This package contains library headers for the shared libraries shipped in the
- audioreach-audio-utils  package.
+ libaudioroute1 package.
 Section: libdevel
-Depends: audioreach-audio-utils (= ${binary:Version}), ${misc:Depends}
+Depends: libaudioroute1 (= ${binary:Version}), ${misc:Depends}
