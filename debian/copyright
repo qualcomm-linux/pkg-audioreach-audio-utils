@@ -1,26 +1,62 @@
-Copyright (c) Qualcomm Technologies, Inc. and/or its subsidiaries.
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: audioreach-audio-utils
+Upstream-Contact: https://github.com/AudioReach/audioreach-audio-utils/issues/new
+Source: https://github.com/Audioreach/audioreach-audio-utils
 
-Redistribution and use in source and binary forms, with or without
-modification, are permitted provided that the following conditions are
-met:
-* Redistributions of source code must retain the above copyright
-  notice, this list of conditions and the following disclaimer.
-* Redistributions in binary form must reproduce the above
-  copyright notice, this list of conditions and the following
-  disclaimer in the documentation and/or other materials provided
-  with the distribution.
-* Neither the name of the copyright holder nor the names of its
-  contributors may be used to endorse or promote products derived
-  from this software without specific prior written permission.
+Files: *
+Copyright: Qualcomm Technologies, Inc. and/or its subsidiaries
+License: BSD-3-Clause-Clear
 
-THIS SOFTWARE IS PROVIDED "AS IS" AND ANY EXPRESS OR IMPLIED
-WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
-MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT
-ARE DISCLAIMED.  IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS
-BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
-CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
-SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR
-BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
-WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
-OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
-IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+Files: audio-route/audio_route.c
+       audio-route/include/system/audio.h
+Copyright: 2011-2013, The Android Open Source Project
+           2023-2024, Qualcomm Innovation Center, Inc.
+           Qualcomm Technologies, Inc. and/or its subsidiaries
+License: Apache-2.0 and BSD-3-Clause-Clear
+
+Files: audio-route/include/audio_route/audio_route.h
+       audio-route/uthash.h
+Copyright: 2013, The Android Open Source Project
+License: Apache-2.0
+
+Files: audio_memlogger/armemlog/parser/enum_replacements.xml
+       audio_memlogger/armemlog/parser/config.xml
+Copyright: Qualcomm Technologies, Inc. and/or its subsidiaries
+License: BSD-3-Clause-Clear
+
+Files: debian/*
+Copyright: Qualcomm Technologies, Inc. and/or its subsidiaries
+License: BSD-3-Clause-Clear
+
+License: Apache-2.0
+ On Debian systems, the complete text of the Apache License, Version 2.0
+ can be found in /usr/share/common-licenses/Apache-2.0.
+
+License: BSD-3-Clause-Clear
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted (subject to the limitations in the disclaimer
+ below) provided that the following conditions are met:
+ .
+ * Redistributions of source code must retain the above copyright notice,
+   this list of conditions and the following disclaimer.
+ .
+ * Redistributions in binary form must reproduce the above copyright notice,
+   this list of conditions and the following disclaimer in the documentation
+   and/or other materials provided with the distribution.
+ .
+ * Neither the name of the copyright holder nor the names of its contributors
+   may be used to endorse or promote products derived from this software
+   without specific prior written permission.
+ .
+ NO EXPRESS OR IMPLIED LICENSES TO ANY PARTY'S PATENT RIGHTS ARE GRANTED BY
+ THIS LICENSE. THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND
+ CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT
+ NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A
+ PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR
+ CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+ EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+ PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS;
+ OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
+ OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
+ ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
