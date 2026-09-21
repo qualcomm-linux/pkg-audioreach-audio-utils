@@ -1,3 +1,10 @@
+audioreach-audio-utils (1.0.1-0qli1~bpo13+1) UNRELEASED; urgency=medium
+
+  * Rebuild for trixie QLI.
+  * d/gbp.conf: Update for QLI branch.
+
+ -- Lukas Märdian <lukas.maerdian@oss.qualcomm.com>  Mon, 21 Sep 2026 12:09:29 +0200
+
 audioreach-audio-utils (1.0.1-0qli1) forky; urgency=medium
 
   [ Lukas Märdian ]
