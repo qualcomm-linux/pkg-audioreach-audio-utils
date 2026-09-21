@@ -1,0 +1,41 @@
+#!/bin/sh
+set -eu
+
+test_dir=$(mktemp -d)
+trap 'rm -rf "$test_dir"' EXIT
+
+pkg-config --exists audioroute
+libdir=$(pkg-config --variable=libdir audioroute)
+test -n "$libdir"
+test -e "$libdir/libaudioroute.so"
+
+cat >"$test_dir/smoke.cpp" <<'EOF'
+#include <audio_route/audio_route.h>
+#include <system/audio.h>
+
+int main()
+{
+    if (popcount(3) != 2)
+        return 1;
+
+    if (audio_route_apply_path(nullptr, "missing") != -1)
+        return 2;
+
+    if (audio_route_reset_path(nullptr, "missing") != -1)
+        return 3;
+
+    if (audio_route_apply_and_update_path(nullptr, "missing") != -1)
+        return 4;
+
+    return 0;
+}
+EOF
+
+c++ -std=gnu++17 \
+    $(pkg-config --cflags audioroute) \
+    "$test_dir/smoke.cpp" \
+    $(pkg-config --libs audioroute) \
+    -o "$test_dir/smoke"
+
+LD_LIBRARY_PATH="$libdir${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}" \
+    "$test_dir/smoke"
