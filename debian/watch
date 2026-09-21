@@ -1,0 +1,7 @@
+# Monitor upstream releases of the AudioReach audio utils.
+# Upstream repository: https://github.com/AudioReach/audioreach-audio-utils
+Version: 5
+
+Template: Github
+Owner: AudioReach
+Project: audioreach-audio-utils

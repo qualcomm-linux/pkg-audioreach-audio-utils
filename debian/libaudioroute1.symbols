@@ -1,0 +1,11 @@
+libaudioroute.so.1 libaudioroute1 #MINVER#
+* Build-Depends-Package: libaudioroute-dev
+ audio_route_apply_and_update_path@Base 1.0.1
+ audio_route_apply_path@Base 1.0.1
+ audio_route_force_reset_and_update_path@Base 1.0.1
+ audio_route_free@Base 1.0.1
+ audio_route_init@Base 1.0.1
+ audio_route_reset@Base 1.0.1
+ audio_route_reset_and_update_path@Base 1.0.1
+ audio_route_reset_path@Base 1.0.1
+ audio_route_update_mixer@Base 1.0.1
