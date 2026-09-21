@@ -1,9 +1,10 @@
-audioreach-audio-utils (1.0.1-0qli1~) UNRELEASED; urgency=medium
+audioreach-audio-utils (1.0.1-0qli1) forky; urgency=medium
 
+  [ Lukas Märdian ]
   * Rebuild for QLI.
   * d/gbp.conf: Update for QLI branch.
 
- -- Lukas Märdian <lukas.maerdian@oss.qualcomm.com>  Mon, 21 Sep 2026 12:00:48 +0200
+ -- Debusine Action Bot <noreply@bot.invalid>  Mon, 21 Sep 2026 10:02:48 +0000
 
 audioreach-audio-utils (1.0.1-0qli+staging2) forky; urgency=medium
 
